@@ -1,0 +1,19 @@
+@import "../../../styles/Variables";
+
+.myInput{
+  width: 30%;
+  height: 45%;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  border-radius: 14px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+textarea:focus, input:focus{
+  outline: none;
+  transition: ease .3s;
+  border: 1px solid $appSecondaryColor;
+}
