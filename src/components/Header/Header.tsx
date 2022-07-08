@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import {MyInput} from '../UI/MyInput/MyInput';
-import classes from './header.module.scss'
+import classes from './Header.module.scss'
 import logo from '../../resources/images/logo.svg'
 import tempAva from '../../resources/images/temporaryAvatar.png'
 
@@ -31,7 +31,7 @@ export const Header = () => {
                     </div>
                 </div>
                 <MyInput/>
-                <div className={classes.accountFeatures}>
+                <div className={classes.accountFeatures}> {/*TODO: подвинуть в конец блока чтобы при ховере сливалось с бекграундом*/}
                     <img src={tempAva} alt="" className={classes.accountFeaturesAvatar}/>
                     {/*<img src={shape} alt="" className={classes.shape}/>*/}
                     <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
